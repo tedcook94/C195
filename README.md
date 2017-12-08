@@ -2,7 +2,6 @@
 A scheduling application built with JavaFX for my C195 - Software II course at WGU. Uses a mySQL database to store users, customer records and appointments. Database ERD can be seen [here](https://drive.google.com/open?id=1MJw70lBYo2tGCYI0l4q9CggS6vsxtTf1).
 
 ## Functionalities
-Overall:
 * Supports adding, modifying and removing customers and appointments. 
 * Generates notifications based on upcoming appointments and can create several different reports.
 * Application is fully localized in English, Spanish and French.
