@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SchedulingApp.ViewController.ModifyAppointmentController">
+    <children>
+        <Label fx:id="lblModifyAppointment" layoutX="39.0" layoutY="22.0" text="Modify Appointment">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblModifyAppointmentTitle" layoutX="15.0" layoutY="75.0" text="Title">
+            <font>
+                <Font size="14.0" />
+            </font></Label>
+        <TextField fx:id="txtModifyAppointmentTitle" layoutX="125.0" layoutY="65.0" prefHeight="40.0" prefWidth="260.0" promptText="Title">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font></TextField>
+        <Label fx:id="lblModifyAppointmentDescription" layoutX="15.0" layoutY="120.0" text="Description">
+            <font>
+                <Font size="14.0" />
+            </font></Label>
+        <TextArea fx:id="txtModifyAppointmentDescription" layoutX="125.0" layoutY="114.0" prefHeight="78.0" prefWidth="260.0" promptText="Description">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font></TextArea>
+        <Label fx:id="lblModifyAppointmentLocation" layoutX="15.0" layoutY="211.0" text="Location">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtModifyAppointmentLocation" layoutX="125.0" layoutY="201.0" prefHeight="40.0" prefWidth="260.0" promptText="Location">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font>
+        </TextField>
+        <Label fx:id="lblModifyAppointmentContact" layoutX="15.0" layoutY="259.0" text="Contact">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtModifyAppointmentContact" layoutX="125.0" layoutY="249.0" prefHeight="40.0" prefWidth="260.0" promptText="Contact">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font></TextField>
+        <Label fx:id="lblModifyAppointmentUrl" layoutX="15.0" layoutY="310.0" text="URL">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtModifyAppointmentUrl" layoutX="125.0" layoutY="300.0" prefHeight="40.0" prefWidth="260.0" promptText="URL">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font>
+        </TextField>
+        <Label fx:id="lblModifyAppointmentDate" layoutX="15.0" layoutY="355.0" text="Date">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <DatePicker fx:id="dateModifyAppointmentDate" layoutX="125.0" layoutY="350.0" prefHeight="30.0" prefWidth="161.0" />
+        <TextField fx:id="txtModifyAppointmentStartHour" layoutX="125.0" layoutY="395.0" prefHeight="30.0" prefWidth="42.0" />
+        <Label layoutX="175.0" layoutY="400.0" text=":">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtModifyAppointmentStartMinute" layoutX="185.0" layoutY="395.0" prefHeight="30.0" prefWidth="42.0" />
+        <ChoiceBox fx:id="choiceModifyAppointmentStartAMPM" layoutX="238.0" layoutY="395.0" prefHeight="30.0" prefWidth="48.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:id="AM" fx:value="AM" />
+                    <String fx:id="PM" fx:value="PM" />
+                </FXCollections>
+            </items>
+        </ChoiceBox>
+        <Label fx:id="lblModifyAppointmentStartTime" layoutX="15.0" layoutY="400.0" text="Start Time">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtModifyAppointmentEndHour" layoutX="125.0" layoutY="440.0" prefHeight="30.0" prefWidth="42.0" />
+        <Label layoutX="175.0" layoutY="445.0" text=":">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtModifyAppointmentEndMinute" layoutX="185.0" layoutY="440.0" prefHeight="30.0" prefWidth="42.0" />
+        <ChoiceBox fx:id="choiceModifyAppointmentEndAMPM" layoutX="238.0" layoutY="440.0" prefHeight="30.0" prefWidth="48.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:id="AM" fx:value="AM" />
+                    <String fx:id="PM" fx:value="PM" />
+                </FXCollections>
+            </items>
+        </ChoiceBox>
+        <Label fx:id="lblModifyAppointmentEndTime" layoutX="15.0" layoutY="445.0" text="End Time">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tvModifyAppointmentAdd" layoutX="425.0" layoutY="65.0" prefHeight="150.0" prefWidth="450.0">
+            <columns>
+                <TableColumn fx:id="tvModifyAppointmentAddNameColumn" prefWidth="112.5" />
+                <TableColumn fx:id="tvModifyAppointmentAddCityColumn" prefWidth="112.5" />
+                <TableColumn fx:id="tvModifyAppointmentAddCountryColumn" prefWidth="112.5" />
+                <TableColumn fx:id="tvModifyAppointmentAddPhoneColumn" prefWidth="112.5" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnModifyAppointmentAdd" layoutX="800.0" layoutY="225.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Add" />
+        <TableView fx:id="tvModifyAppointmentDelete" layoutX="425.0" layoutY="265.0" prefHeight="150.0" prefWidth="450.0">
+            <columns>
+                <TableColumn fx:id="tvModifyAppointmentDeleteNameColumn" prefWidth="112.5" />
+                <TableColumn fx:id="tvModifyAppointmentDeleteCityColumn" prefWidth="112.5" />
+                <TableColumn fx:id="tvModifyAppointmentDeleteCountryColumn" prefWidth="112.5" />
+                <TableColumn fx:id="tvModifyAppointmentDeletePhoneColumn" prefWidth="112.5" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnModifyAppointmentDelete" layoutX="800.0" layoutY="425.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Delete" />
+        <Button fx:id="btnModifyAppointmentCancel" layoutX="800.0" layoutY="461.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Cancel" />
+        <Button fx:id="btnModifyAppointmentSave" layoutX="714.0" layoutY="461.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Save" />
+    </children>
+</AnchorPane>

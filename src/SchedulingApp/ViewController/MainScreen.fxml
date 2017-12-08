@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane fx:id="mainScreenGrid" prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SchedulingApp.ViewController.MainScreenController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="Infinity" minWidth="10.0" prefWidth="800.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="Infinity" minWidth="10.0" prefWidth="200.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="Infinity" minHeight="10.0" prefHeight="422.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="Infinity" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="Infinity" minHeight="10.0" prefHeight="251.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+         <padding>
+            <Insets bottom="20.0" left="20.0" top="45.0" />
+         </padding>
+         <children>
+            <Button fx:id="btnAddAppointment" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" text="Add Appointment">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin></Button>
+            <Button fx:id="btnAppointmentSummary" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" text="Appointment Summary">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnReports" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" text="Reports">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <children>
+             <Button fx:id="btnMainScreenCurrentDate" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Go to Current Date">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin></Button>
+            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+             <Button fx:id="btnMainScreenToggleView" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="180.0" text="Switch to Weekly View">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin></Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </HBox>
+      <TableView fx:id="tvCustomers" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+        <columns>
+            <TableColumn fx:id="tvCustomersNameColumn" prefWidth="150.0" />
+            <TableColumn fx:id="tvCustomersAddressColumn" prefWidth="175.0" />
+            <TableColumn fx:id="tvCustomersAddress2Column" prefWidth="150.0" />
+            <TableColumn fx:id="tvCustomersCityColumn" prefWidth="100.0" />
+            <TableColumn fx:id="tvCustomersCountryColumn" prefWidth="100.0" />
+            <TableColumn fx:id="tvCustomersPhoneColumn" prefWidth="100.0" />
+        </columns>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets top="20.0" />
+         </GridPane.margin>
+      </TableView>
+      <VBox alignment="TOP_CENTER" depthTest="DISABLE" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <Button fx:id="btnAddCustomer" alignment="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" text="Add Customer">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin></Button>
+            <Button fx:id="btnModifyCustomer" alignment="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" text="Modify Customer">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnRemoveCustomer" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" text="Remove Customer">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Pane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="btnExit" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" text="Exit" />
+               </children>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="20.0" top="20.0" />
+         </padding>
+      </VBox>
+      <Pane fx:id="staticPane" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</GridPane>
