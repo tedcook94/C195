@@ -8,7 +8,7 @@ Overall:
 * Application is fully localized in English, Spanish and French.
 * Automatically adjusts dates and times for system's location.
 
-## Log-In:
+## Log-In
 * Users must log-in to access the main screen and other application functions
 * Users cannot be added or edited from within the application. Contact your database administrator for assistance with users.
 * Current users are as follows:
@@ -21,14 +21,14 @@ Overall:
   - Each log-in is recorded with the user and timestamp of the log-in.
   - New records are appended to the end of the existing file.
 
-## Calendar:
+## Calendar
 * Calendar opens in a monthly view on the current date.
 * Large blue numbers in day panes indicate the number of appointments scheduled for that date.
 * Calendar can be swapped between monthly and weekly views using the Switch to Monthly/Weekly View button.
 * The month or week can be moved forward or back using the buttons next to the date at the top of the calendar.
 * The calendar can jump to today's date using the Go to Current Date button.
 
-## Customers:
+## Customers
 * Active customers can be viewed in the table on the main screen.
 * Customers can be added via the Add Customer window.
   - The Add Customer window is opened with the Add Customer button on the main screen.
@@ -41,7 +41,7 @@ Overall:
   - A customer must be selected from the table to be removed.
   - Removing a customer keeps their entry in the database while setting them to inactive. This will also hide them from the table.
 
-## Appointments:
+## Appointments
 * Upcoming scheduled appointments can be viewed in the table in the Appointment Summary window.
   - The Appointment Summary window is opened with the Appointment Summary button on the main screen.
   - More information about each appointment can be accessed by selecting an appointment from the table and then using the Get More Info button in the Appointment Summary window.
@@ -55,7 +55,7 @@ Overall:
   - An appointment must be selected from the table to be deleted.
   - Deleting an appointment also deletes the appointment entry from the database.
 	
-## Reports:
+## Reports
 * Reports can be generated from the Reports window.
   - The Reports window is opened with the Reports button on the main screen.
 * Reports that can be generated include the following (all files are saved to project's root folder):
